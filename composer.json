@@ -1,0 +1,17 @@
+{
+  "name": "virgi/test-composer",
+  "description": "This is a test",
+  "authors": [
+    {
+      "name": "Virgile RIETSCH",
+      "email": "varkoff@outlook.fr"
+    }
+  ],
+  "require": {},
+  "autoload": {
+    "psr-4": {
+      "Acme\\": "src/",
+      "App\\Wcs\\": "src/Wcs/"
+    }
+  }
+}
