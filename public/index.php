@@ -1,10 +1,13 @@
 <?php
 require '../vendor/autoload.php';
 
-//use App\Wcs\Hello;
-//
-//$test = Hello::talk();
-//echo "$test";
-use HelloWorld\SayHello;
+$products = ['products' => ['product1', 'product2', 'product3', 'product4', 'product5']];
 
-echo SayHello::world();
+
+$loader = new \Twig\Loader\FilesystemLoader(__DIR__ . '/../View');
+
+$twig = new Twig\Environment($loader);
+
+
+echo $twig->render('index.html.twig', $products);
+

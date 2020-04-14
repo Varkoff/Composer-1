@@ -8,7 +8,8 @@
     }
   ],
   "require": {
-    "ehime/hello-world": "^1.0"
+    "ehime/hello-world": "^1.0",
+    "twig/twig": "^3.0"
   },
   "autoload": {
     "psr-4": {
